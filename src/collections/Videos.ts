@@ -6,7 +6,7 @@ import adminsAndUser from "./access/adminsAndUser";
 import { admins } from "./access/admins";
 import { loginAfterCreate } from "./hooks/loginAfterCreate";
 
-export const Users: CollectionConfig = {
+export const Videos: CollectionConfig = {
   slug: "videos",
   admin: {
     useAsTitle: "title",
