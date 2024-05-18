@@ -15,6 +15,7 @@
     "seed": "tsx ./src/seed.ts"
   },
   "dependencies": {
+    "@payloadcms/db-postgres": "beta",
     "@payloadcms/next": "beta",
     "@payloadcms/plugin-cloud": "beta",
     "@payloadcms/richtext-lexical": "beta",
@@ -24,14 +25,14 @@
     "payload": "beta",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "sharp": "0.32.6",
-    "@payloadcms/db-postgres": "beta"
+    "sharp": "0.32.6"
   },
   "devDependencies": {
     "@types/node": "^20.11.25",
     "@types/react": "^18.2.64",
     "@types/react-dom": "^18.2.21",
     "dotenv": "^16.4.5",
+    "eslint": "^9.3.0",
     "tsx": "^4.7.1",
     "typescript": "^5.4.2"
   },
