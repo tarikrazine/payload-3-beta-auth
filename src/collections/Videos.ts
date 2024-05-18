@@ -7,54 +7,44 @@ import { admins } from "./access/admins";
 import { loginAfterCreate } from "./hooks/loginAfterCreate";
 
 export const Users: CollectionConfig = {
-  slug: "users",
+  slug: "videos",
   admin: {
-    useAsTitle: "email",
+    useAsTitle: "title",
   },
-  auth: true,
   access: {
-    create: anyone,
+    create: adminsAndUser,
     read: adminsAndUser,
     update: adminsAndUser,
-    delete: admins,
+    delete: adminsAndUser,
     admin: ({ req: { user } }) => checkRole(["admin"], user),
-  },
-  hooks: {
-    afterChange: [loginAfterCreate],
   },
   fields: [
     {
-      name: "firstName",
+      name: "title",
       type: "text",
+      required: true,
     },
     {
-      name: "lastName",
+      name: "thumbnail",
       type: "text",
+      required: true,
     },
     {
-      name: "videos",
+      name: "prompt",
+      type: "text",
+      required: true,
+    },
+    {
+      name: "user",
       type: "relationship",
-      relationTo: "videos",
-      hasMany: true,
+      relationTo: "users",
+      hasMany: false,
+      required: true,
     },
     {
-      name: "roles",
-      type: "select",
-      hasMany: true,
-      saveToJWT: true,
-      hooks: {
-        beforeChange: [protectRoles],
-      },
-      options: [
-        {
-          label: "Admin",
-          value: "admin",
-        },
-        {
-          label: "User",
-          value: "user",
-        },
-      ],
+      name: "video",
+      type: "text",
+      required: true,
     },
   ],
 };
