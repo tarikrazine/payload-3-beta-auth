@@ -31,12 +31,12 @@ export const Users: CollectionConfig = {
       name: "lastName",
       type: "text",
     },
-    {
-      name: "videos",
-      type: "relationship",
-      relationTo: "videos",
-      hasMany: true,
-    },
+    // {
+    //   name: "videos",
+    //   type: "relationship",
+    //   relationTo: "videos",
+    //   hasMany: true,
+    // },
     {
       name: "roles",
       type: "select",

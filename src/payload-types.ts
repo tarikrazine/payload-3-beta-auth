@@ -9,6 +9,7 @@
 export interface Config {
   collections: {
     users: User;
+    videos: Video;
     'payload-preferences': PayloadPreference;
     'payload-migrations': PayloadMigration;
   };
@@ -26,6 +27,7 @@ export interface User {
   id: number;
   firstName?: string | null;
   lastName?: string | null;
+  videos?: (number | Video)[] | null;
   roles?: ('admin' | 'user')[] | null;
   updatedAt: string;
   createdAt: string;
@@ -37,6 +39,20 @@ export interface User {
   loginAttempts?: number | null;
   lockUntil?: string | null;
   password?: string | null;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "videos".
+ */
+export interface Video {
+  id: number;
+  title: string;
+  thumbnail: string;
+  prompt: string;
+  user: number | User;
+  video: string;
+  updatedAt: string;
+  createdAt: string;
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
