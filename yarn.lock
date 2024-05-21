@@ -1725,10 +1725,10 @@
   resolved "https://registry.yarnpkg.com/@one-ini/wasm/-/wasm-0.1.1.tgz#6013659736c9dbfccc96e8a9c2b3de317df39323"
   integrity sha512-XuySG1E38YScSJoMlqovLru4KTUNSjgVTIjyh7qMX6aNN5HY5Ct5LhRJdxO79JtTzKfzV/bnWpz+zquYrISsvw==
 
-"@payloadcms/db-postgres@beta":
-  version "3.0.0-beta.35"
-  resolved "https://registry.yarnpkg.com/@payloadcms/db-postgres/-/db-postgres-3.0.0-beta.35.tgz#b85ace0a4b72dc0bbf7ab326d62e26dda26c339a"
-  integrity sha512-QxhgoEaQbaSRy9fH3YF0vjX0SrpZrbq+P6dbYR8SHyTY/dOck+PYIfL9Pn8RcgdTIXe8y3JDP6UEVN3IIpdCQg==
+"@payloadcms/db-postgres@3.0.0-beta.34":
+  version "3.0.0-beta.34"
+  resolved "https://registry.yarnpkg.com/@payloadcms/db-postgres/-/db-postgres-3.0.0-beta.34.tgz#fcc5942ec59f57eca62f384c5d58d49070bf1f23"
+  integrity sha512-ydAInKuEkU6hvfKeTMwSSvlVwy0jjUqufrFC/SQpL6yJTZr7SweHNtpNeSx19V+JNz4CfFuNB7YxrqThApMb5w==
   dependencies:
     "@libsql/client" "^0.5.2"
     console-table-printer "2.11.2"
@@ -1739,31 +1739,31 @@
     to-snake-case "1.0.0"
     uuid "9.0.0"
 
-"@payloadcms/email-nodemailer@^3.0.0-beta.35":
+"@payloadcms/email-nodemailer@^3.0.0-beta.34":
   version "3.0.0-canary.f6e77b8"
   resolved "https://registry.yarnpkg.com/@payloadcms/email-nodemailer/-/email-nodemailer-3.0.0-canary.f6e77b8.tgz#dc10e793168a5e82042036e5ecbf5c8de57673fe"
   integrity sha512-jXtqEdfmpEJhCoEVkWH4PkNziT84y1Wp58EuBNAZ/ylUBvjEHhdBojKzvso24S0n/qXLkSjE0eFHq1EngaHOyQ==
   dependencies:
     nodemailer "6.9.10"
 
-"@payloadcms/graphql@3.0.0-beta.35":
-  version "3.0.0-beta.35"
-  resolved "https://registry.yarnpkg.com/@payloadcms/graphql/-/graphql-3.0.0-beta.35.tgz#061b5ee34fc010de7c30a4c62dce59691f9232e7"
-  integrity sha512-UQliyLf9FAqeAM5YbkSiRqzi+j2JuZpo4BqyINcKCyv3YnLXBMYXYF/ZwwL3sXpMj2mo0rU21zqArj8TApJe8A==
+"@payloadcms/graphql@3.0.0-beta.34":
+  version "3.0.0-beta.34"
+  resolved "https://registry.yarnpkg.com/@payloadcms/graphql/-/graphql-3.0.0-beta.34.tgz#ab08b60416168421a58ce2367b4ee6a9092339ae"
+  integrity sha512-ALB+8Pe6UuXui2CKZ5UDiU3qGhTP+hMlpcMsZ4uXX1IeqBUadKe+S4Cj32yYrFq/JJ9nKCj23LNNwfuHLBZNRQ==
   dependencies:
     graphql-scalars "1.22.2"
     pluralize "8.0.0"
     ts-essentials "7.0.3"
 
-"@payloadcms/next@beta":
-  version "3.0.0-beta.35"
-  resolved "https://registry.yarnpkg.com/@payloadcms/next/-/next-3.0.0-beta.35.tgz#4db672a3ca151ff01cb02d11c266096d6f64a64f"
-  integrity sha512-hnu2fIMouCRG8es9uYQdF4A/iWQQuEyebHA+M5HaeOlDR5POmorDnKAda6V0MJ3v+cKGQ8ETKiZA7oZsB+AaLQ==
+"@payloadcms/next@3.0.0-beta.34":
+  version "3.0.0-beta.34"
+  resolved "https://registry.yarnpkg.com/@payloadcms/next/-/next-3.0.0-beta.34.tgz#0563c1ab2da57b63c8ba2037a8b705d4419349a7"
+  integrity sha512-NkIweEZXzRjqt1SufC2bu4Zs+uiiJzQB0+8MT5V5Q3FxEMQyEF/7pjgAZtfikMG75IHzE8gp/YP4xP5ULemd0A==
   dependencies:
     "@dnd-kit/core" "6.0.8"
-    "@payloadcms/graphql" "3.0.0-beta.35"
-    "@payloadcms/translations" "3.0.0-beta.35"
-    "@payloadcms/ui" "3.0.0-beta.35"
+    "@payloadcms/graphql" "3.0.0-beta.34"
+    "@payloadcms/translations" "3.0.0-beta.34"
+    "@payloadcms/ui" "3.0.0-beta.34"
     "@types/busboy" "^1.5.3"
     busboy "^1.6.0"
     deep-equal "2.2.2"
@@ -1786,24 +1786,24 @@
     find-node-modules "^2.1.3"
     range-parser "^1.2.1"
 
-"@payloadcms/plugin-cloud@beta":
-  version "3.0.0-beta.35"
-  resolved "https://registry.yarnpkg.com/@payloadcms/plugin-cloud/-/plugin-cloud-3.0.0-beta.35.tgz#e585583bc3d177ed27e74cf88f7e1b422afbd29b"
-  integrity sha512-ur+pnSRrc90byZiiE27dUkQmNPsrGZdJ9oS9YBJU1160lMBmPmWXlRo6v+JDgWMN/uHNYwl+ykYx5M9/VA+L8w==
+"@payloadcms/plugin-cloud@3.0.0-beta.34":
+  version "3.0.0-beta.34"
+  resolved "https://registry.yarnpkg.com/@payloadcms/plugin-cloud/-/plugin-cloud-3.0.0-beta.34.tgz#d38fe14a4be1e869aabd69b90e573045fc449537"
+  integrity sha512-qPd7X4Z+NOc73DWOIOb2Rs7j9Zv8Gepuymr3j+snNzoeTxVYm9P4CbpeIsPwaahVmAAmc8DPkbi01KbJcnuA/g==
   dependencies:
     "@aws-sdk/client-cognito-identity" "^3.525.0"
     "@aws-sdk/client-s3" "^3.525.0"
     "@aws-sdk/credential-providers" "^3.525.0"
     "@aws-sdk/lib-storage" "^3.525.0"
-    "@payloadcms/email-nodemailer" "^3.0.0-beta.35"
+    "@payloadcms/email-nodemailer" "^3.0.0-beta.34"
     amazon-cognito-identity-js "^6.1.2"
     nodemailer "6.9.10"
     resend "^0.17.2"
 
-"@payloadcms/richtext-lexical@beta":
-  version "3.0.0-beta.35"
-  resolved "https://registry.yarnpkg.com/@payloadcms/richtext-lexical/-/richtext-lexical-3.0.0-beta.35.tgz#ed85c9f395e64acba7cdda12a830d01470de1465"
-  integrity sha512-eDYwo23+uVS9lbMa7ZJQGtZkDaijtdd1pY/QriuW0LgT+vzkVtHVFPh97bPCY/vR0o0+VaLaVry+NoNMN541Cg==
+"@payloadcms/richtext-lexical@3.0.0-beta.34":
+  version "3.0.0-beta.34"
+  resolved "https://registry.yarnpkg.com/@payloadcms/richtext-lexical/-/richtext-lexical-3.0.0-beta.34.tgz#c8491e47c1dc9ad2e9c7ab949aba204d772df313"
+  integrity sha512-Al6uGaq4dFmMCIosKwhla7yc9AG5t4+PR/q3CzQT93wrWLccWdUhMCz5XSQ3HUb+c7sbgcHvwnY0Y4hQBEqeIw==
   dependencies:
     "@faceless-ui/modal" "2.0.2"
     "@lexical/headless" "0.15.0"
@@ -1834,15 +1834,20 @@
     "@aws-sdk/lib-storage" "^3.525.0"
     "@payloadcms/plugin-cloud-storage" "3.0.0-beta.29"
 
+"@payloadcms/translations@3.0.0-beta.34":
+  version "3.0.0-beta.34"
+  resolved "https://registry.yarnpkg.com/@payloadcms/translations/-/translations-3.0.0-beta.34.tgz#3f4ec118c90bec9ec967e49c5471a492992d1728"
+  integrity sha512-ZK+m7BzdKYLhQoxU+z9T4GG1B3L+aV0SoPrB6R6K47OscizvyDWTeJgzmct5n8vH2SWhUaEEUeKuXepFchBmeQ==
+
 "@payloadcms/translations@3.0.0-beta.35":
   version "3.0.0-beta.35"
   resolved "https://registry.yarnpkg.com/@payloadcms/translations/-/translations-3.0.0-beta.35.tgz#cf4534212ca0e87a68f9c07af99f07623b95ff56"
   integrity sha512-q0Rf5HzQq1s7Nv40QAcTbEXkWkxRJHBX4tF38H53BOMkXRhMhvZb7+fod0oT9BXLCBqd/ADoyI0Psod7BWjKrg==
 
-"@payloadcms/ui@3.0.0-beta.35":
-  version "3.0.0-beta.35"
-  resolved "https://registry.yarnpkg.com/@payloadcms/ui/-/ui-3.0.0-beta.35.tgz#18b35df4b7ec4b5af2ff2a217d19bb463dd85fbd"
-  integrity sha512-n0jy0v2kCPI1ApE3Wj45tbu3ltfhCERBhVZAYxSEZv/5QOxTVr2D/J9BQaV95JzFI5bRMvClDyoDKfoVhejrFQ==
+"@payloadcms/ui@3.0.0-beta.34":
+  version "3.0.0-beta.34"
+  resolved "https://registry.yarnpkg.com/@payloadcms/ui/-/ui-3.0.0-beta.34.tgz#b789281a32630475c2497340fb405f964db45dea"
+  integrity sha512-uV7eGYfnYTxCNSnmonym20D7clFApSUarvs47FaR2Y0mgP+orkRGwJSqebkhbXdata1wepA4DaqN4PI+Ac5SRg==
   dependencies:
     "@dnd-kit/core" "6.0.8"
     "@dnd-kit/sortable" "7.0.2"
@@ -1850,7 +1855,7 @@
     "@faceless-ui/scroll-info" "1.3.0"
     "@faceless-ui/window-info" "2.1.2"
     "@monaco-editor/react" "4.5.1"
-    "@payloadcms/translations" "3.0.0-beta.35"
+    "@payloadcms/translations" "3.0.0-beta.34"
     body-scroll-lock "4.0.0-beta.0"
     bson-objectid "2.0.4"
     date-fns "3.3.1"
