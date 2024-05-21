@@ -1,5 +1,5 @@
 import { postgresAdapter } from "@payloadcms/db-postgres";
-// import { payloadCloud } from '@payloadcms/plugin-cloud'
+import { s3Storage } from "@payloadcms/storage-s3";
 import { lexicalEditor } from "@payloadcms/richtext-lexical";
 import path from "path";
 import { buildConfig } from "payload/config";
@@ -18,7 +18,20 @@ export default buildConfig({
   },
   collections: [Users, Videos],
   editor: lexicalEditor({}),
-  // plugins: [payloadCloud()], // TODO: Re-enable when cloud supports 3.0
+  plugins: [
+    s3Storage({
+      collections: { [Videos.slug]: true },
+      config: {
+        credentials: {
+          accessKeyId: process.env.S3_ACCESS_KEY!,
+          secretAccessKey: process.env.S3_SECRET_KEY!,
+        },
+        region: process.env.S3_BUCKET_REGION,
+        //endpoint: process.env.PAYLOAD_S3_ENDPOINT,
+      },
+      bucket: process.env.S3_BUCKET!,
+    }),
+  ], // TODO: Re-enable when cloud supports 3.0
   secret: process.env.PAYLOAD_SECRET || "",
   typescript: {
     outputFile: path.resolve(dirname, "payload-types.ts"),
