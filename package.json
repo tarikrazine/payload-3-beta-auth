@@ -14,15 +14,15 @@
     "start": "cross-env NODE_OPTIONS=--no-deprecation next start"
   },
   "dependencies": {
-    "@payloadcms/db-postgres": "beta",
-    "@payloadcms/next": "beta",
-    "@payloadcms/plugin-cloud": "beta",
-    "@payloadcms/richtext-lexical": "beta",
-    "@payloadcms/storage-s3": "^3.0.0-beta.29",
+    "@payloadcms/db-postgres": "3.0.0-beta.35",
+    "@payloadcms/next": "3.0.0-beta.35",
+    "@payloadcms/plugin-cloud": "3.0.0-beta.35",
+    "@payloadcms/richtext-lexical": "3.0.0-beta.35",
+    "@payloadcms/storage-s3": "^3.0.0-beta.35",
     "cross-env": "^7.0.3",
     "graphql": "^16.8.1",
     "next": "14.3.0-canary.68",
-    "payload": "beta",
+    "payload": "3.0.0-beta.35",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "sharp": "0.32.6"
